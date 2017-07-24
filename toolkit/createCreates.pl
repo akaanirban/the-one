@@ -18,6 +18,10 @@ my $hostPrefix = "";
 # index of first message
 my $msgIndex = 1;
 
+
+# ADD ANOTHER COLUMN TO ACCOUNT FOR THE ACTUAL MESSAGE HERE
+
+
 my ($randSeed,  $nrofMessages, $times, $hosts, $sizes, $rsizes, $help);
 
 GetOptions("seed=i" => \$randSeed, "time=s" => \$times,
