@@ -8,13 +8,18 @@ import core.DTNHost;
 import core.Message;
 import core.World;
 
+import java.util.ArrayList;
+
 /**
  * External event for creating a message.
  */
 public class MessageCreateEvent extends MessageEvent {
 	private int size;
 	private int responseSize;
-
+    /** Payload of the message i.e. content */
+    private double payload;
+    /** Tag associated with the message */
+    private ArrayList<Integer> messageTag = new ArrayList<Integer>();
 	/**
 	 * Creates a message creation event with a optional response request
 	 * @param from The creator of the message
@@ -30,11 +35,17 @@ public class MessageCreateEvent extends MessageEvent {
 		super(from,to, id, time);
 		this.size = size;
 		this.responseSize = responseSize;
+        this.payload = 2908;
 	}
 
 	/**Creates the message when being called from inside PayloadMessageCreateEvent*/
-	public MessageCreateEvent(int from, int to, String id, double time) {
+	public MessageCreateEvent(int from, int to, String id, int size,
+                              int responseSize, double time, double content, ArrayList tag) {
 		super(from,to, id, time);
+        this.size = size;
+        this.responseSize = responseSize;
+        this.payload = content;
+        this.messageTag = tag;
 	}
 
 	/**
@@ -45,7 +56,7 @@ public class MessageCreateEvent extends MessageEvent {
 		DTNHost to = world.getNodeByAddress(this.toAddr);
 		DTNHost from = world.getNodeByAddress(this.fromAddr);
 
-		Message m = new Message(from, to, this.id, this.size);
+		Message m = new Message(from, to, this.id, this.size, this.payload, this.messageTag);
 		m.setResponseSize(this.responseSize);
 		from.createNewMessage(m);
 	}

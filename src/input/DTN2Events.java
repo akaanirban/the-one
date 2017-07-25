@@ -14,11 +14,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.Map;
-import java.util.Queue;
+import java.util.*;
 
 import core.DTN2Manager;
 import core.Debug;
@@ -232,7 +228,7 @@ public class DTN2Events implements EventQueue {
 		id = "bundle."+from+"-"+to+"-"+bundle.creation_timestamp_time+
 			"-"+bundle.creation_timestamp_seq_no;
 		MessageCreateEvent e = new MessageCreateEvent(from, to, id,
-				(int)(bundle.file.length()), 0, SimClock.getTime());
+				(int)(bundle.file.length()), 0, SimClock.getTime(), 1618, new ArrayList());
 		synchronized (this.events) {
 			this.events.add(e);
 		}

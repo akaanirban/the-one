@@ -26,11 +26,11 @@ public class PayloadMessageCreateEvent extends MessageCreateEvent {
      */
     public PayloadMessageCreateEvent(int from, int to, String id, int size,
                                      int responseSize, double time, double content, ArrayList tag) {
-        super(from,to, id , time);
-        this.size = size;
+        super(from, to, id,size, responseSize, time, content, tag);
+        /*this.size = size;
         this.responseSize = responseSize;
         this.payload = content;
-        this.messageTag = tag;
+        this.messageTag = tag;*/
     }
 
 

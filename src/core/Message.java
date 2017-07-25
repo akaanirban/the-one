@@ -41,6 +41,13 @@ public class Message implements Comparable<Message> {
 	/** if this message is a response message, this is set to the request msg*/
 	private Message requestMsg;
 
+
+	/** Payload of the message i.e. content */
+	private double payload;
+	/** Tag associated with the message */
+	private ArrayList<Integer> messageTag = new ArrayList<Integer>();
+
+
 	/** Container for generic message properties. Note that all values
 	 * stored in the properties should be immutable because only a shallow
 	 * copy of the properties is made when replicating messages */
@@ -69,7 +76,8 @@ public class Message implements Comparable<Message> {
 		this.size = size;
 		this.path = new ArrayList<DTNHost>();
 		this.uniqueId = nextUniqueId;
-
+		this.messageTag = null;
+		this.payload =  2908;
 		this.timeCreated = SimClock.getTime();
 		this.timeReceived = this.timeCreated;
 		this.initTtl = INFINITE_TTL;
@@ -81,6 +89,40 @@ public class Message implements Comparable<Message> {
 		Message.nextUniqueId++;
 		addNodeOnPath(from);
 	}
+
+
+	public Message(DTNHost from, DTNHost to, String id, int size, double content, ArrayList<Integer> tag) {
+		this.from = from;
+		this.to = to;
+		this.id = id;
+		this.size = size;
+		this.path = new ArrayList<DTNHost>();
+		this.uniqueId = nextUniqueId;
+		this.messageTag = tag;
+		this.payload =  content;
+		this.timeCreated = SimClock.getTime();
+		this.timeReceived = this.timeCreated;
+		this.initTtl = INFINITE_TTL;
+		this.responseSize = 0;
+		this.requestMsg = null;
+		this.properties = null;
+		this.appID = null;
+
+		Message.nextUniqueId++;
+		addNodeOnPath(from);
+	}
+
+
+	/** Return the payload*/
+	public double getPayload() {
+		return payload;
+	}
+
+	/** Return the tag of the message*/
+	public ArrayList<Integer> getMessageTag() {
+		return messageTag;
+	}
+
 
 	/**
 	 * Returns the node this message is originally from
@@ -262,6 +304,9 @@ public class Message implements Comparable<Message> {
 		this.requestMsg  = m.requestMsg;
 		this.initTtl = m.initTtl;
 		this.appID = m.appID;
+		this.messageTag = m.messageTag;
+		this.payload = m.payload;
+
 
 		if (m.properties != null) {
 			Set<String> keys = m.properties.keySet();

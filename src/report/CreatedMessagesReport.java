@@ -40,7 +40,7 @@ public class CreatedMessagesReport extends Report implements MessageListener {
 		write(format(getSimTime()) + " " + m.getId() + " " +
 				m.getSize() + " " + m.getFrom() + " " + m.getTo() + " " +
 				(ttl != Integer.MAX_VALUE ? ttl : "n/a") +
-				(m.isResponse() ? " Y " : " N "));
+				(m.isResponse() ? " Y " : " N ") + m.getPayload() + m.getMessageTag());
 	}
 
 	// nothing to implement for the rest

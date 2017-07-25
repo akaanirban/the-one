@@ -4,6 +4,8 @@
  */
 package input;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Random;
 
 import core.Settings;
@@ -182,6 +184,32 @@ public class MessageEventGenerator implements EventQueue {
 	}
 
 	/**
+	 * Draws a destination host address that is different from the "from"
+	 * address
+	 * @return a random content
+	 */
+	protected double drawContent(int from) {
+		Random randomContent = new Random();
+		randomContent.setSeed(from);
+		return (double) randomContent.nextInt(200) + 0.5 ; //just randomly adding something
+	}
+
+	/**
+	 * Draws a tag for the message w.r.t. the message content "from"
+	 * address
+	 * @return a array of tag
+	 */
+	protected ArrayList drawTag(int from) {
+		int numberOfHosts = this.hostRange[1] - this.hostRange[0];
+		ArrayList tag = new ArrayList<Integer>(Collections.nCopies(numberOfHosts,0));
+		tag.set(from-1, 1);
+		return tag;
+	}
+
+
+
+
+	/**
 	 * Returns the next message creation event
 	 * @see input.EventQueue#nextEvent()
 	 */
@@ -191,6 +219,8 @@ public class MessageEventGenerator implements EventQueue {
 		int interval;
 		int from;
 		int to;
+        double content;
+        ArrayList tag;
 
 		/* Get two *different* nodes randomly from the host ranges */
 		from = drawHostAddress(this.hostRange);
@@ -199,9 +229,12 @@ public class MessageEventGenerator implements EventQueue {
 		msgSize = drawMessageSize();
 		interval = drawNextEventTimeDiff();
 
+        content = drawContent(from);
+        tag = drawTag(from);
+
 		/* Create event and advance to next event */
 		MessageCreateEvent mce = new MessageCreateEvent(from, to, this.getID(),
-				msgSize, responseSize, this.nextEventsTime);
+				msgSize, responseSize, this.nextEventsTime, content, tag);
 		this.nextEventsTime += interval;
 
 		if (this.msgTime != null && this.nextEventsTime > this.msgTime[1]) {

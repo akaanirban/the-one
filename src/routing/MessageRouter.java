@@ -330,7 +330,6 @@ public abstract class MessageRouter {
 	 */
 	public int receiveMessage(Message m, DTNHost from) {
 		Message newMessage = m.replicate();
-
 		this.putToIncomingBuffer(newMessage, from);
 		newMessage.addNodeOnPath(this.host);
 

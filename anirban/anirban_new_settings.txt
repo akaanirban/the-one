@@ -9,7 +9,8 @@ Scenario.name = anirban_test
 Scenario.simulateConnections = true
 Scenario.updateInterval = 0.1
 # 43200s == 12h
-Scenario.endTime = 43200
+#Scenario.endTime = 43200
+Scenario.endTime = 2000
 
 ## Interface-specific settings:
 # type : which interface class the interface belongs to
@@ -35,7 +36,7 @@ Scenario.nrofHostGroups = 1
 # The Tram groups
 Group.groupID = t
 Group.bufferSize = 50M
-Group.router = SprayAndWaitRouter
+Group.router = EpidemicRouter
 Group.movementModel = ShortestPathMapBasedMovement
 #Group.routeFile = data/tram3.wkt
 Group.routeType = 1
@@ -60,7 +61,7 @@ Group.interface1 = btInterface
 # How many event generators
 Events.nrof = 1
 # Class of the first event generator
-Events1.class = PayloadMessageEventGenerator
+Events1.class = MessageEventGenerator
 # (following settings are specific for the MessageEventGenerator class)
 # Creation interval in seconds (one new message every 25 to 35 seconds)
 Events1.interval = 25,35

@@ -85,7 +85,8 @@ public class InfoPanel extends JPanel implements ActionListener{
 		int ttl = m.getTtl();
 		String txt = " [" + m.getFrom() + "->" + m.getTo() + "] " +
 				"size:" + m.getSize() + ", UI:" + m.getUniqueId() +
-				", received @ " + String.format("%.2f", m.getReceiveTime());
+				", received @ " + String.format("%.2f", m.getReceiveTime())
+				+ " content:" + m.getPayload()  ;
 		if (ttl != Integer.MAX_VALUE) {
 			txt += " TTL: " + ttl;
 		}
