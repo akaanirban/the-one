@@ -32,6 +32,10 @@ public class MessageCreateEvent extends MessageEvent {
 		this.responseSize = responseSize;
 	}
 
+	/**Creates the message when being called from inside PayloadMessageCreateEvent*/
+	public MessageCreateEvent(int from, int to, String id, double time) {
+		super(from,to, id, time);
+	}
 
 	/**
 	 * Creates the message this event represents.
