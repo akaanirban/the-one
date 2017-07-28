@@ -297,7 +297,7 @@ public class Message implements Comparable<Message> {
 	 * (unless done in constructor).
 	 * @param m The message where the data is copied
 	 */
-	protected void copyFrom(Message m) {
+	public void copyFrom(Message m) {
 		this.path = new ArrayList<DTNHost>(m.path);
 		this.timeCreated = m.timeCreated;
 		this.responseSize = m.responseSize;
@@ -404,5 +404,23 @@ public class Message implements Comparable<Message> {
 	public void setAppID(String appID) {
 		this.appID = appID;
 	}
+
+	/**
+	 * Sets the payload of the message.
+	 * @param p The payload to set
+	 */
+	public void setPayload(double p) {
+		this.payload = p;
+	}
+
+	/**
+	 * Sets the tag of the message.
+	 * @param t The tag to set
+	 */
+	public void setMessageTag(ArrayList<Integer> t) {
+		this.messageTag = t;
+	}
+
+
 
 }

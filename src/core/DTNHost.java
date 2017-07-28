@@ -36,6 +36,9 @@ public class DTNHost implements Comparable<DTNHost> {
 	private List<NetworkInterface> net;
 	private ModuleCommunicationBus comBus;
 
+	private boolean HOTSPOT_FLAG; //flag set if it is a hotspot.
+	private Message Aggregate_Message; // Aggregate message at any moment to a router.
+
 	static {
 		DTNSim.registerForReset(DTNHost.class.getCanonicalName());
 		reset();
@@ -538,4 +541,25 @@ public class DTNHost implements Comparable<DTNHost> {
 		return this.getAddress() - h.getAddress();
 	}
 
+	/**
+	 * Sets the Nodes hotspot capability.
+	 * @return Sets True if the DTNHost is a hotspot else sets False
+	 */
+	public void setHotSpot(boolean HotSpot_Flag){ this.HOTSPOT_FLAG = HotSpot_Flag;}
+
+	/**
+	 * Checking whether the DTN Host is a hotspot or not.
+	 * @return True if the DTNHost is a hotspot else return False
+	 */
+	public boolean isHotSpot(){ return HOTSPOT_FLAG;}
+
+	/**
+	 * Set an aggregate message for transferring
+	 * @param m The aggregate message
+	 */
+	public void setAggregateMessage(Message m) {
+		this.Aggregate_Message = new Message(m.getFrom(), m.getTo(),
+				m.getId(),m.getSize(),m.getPayload(),m.getMessageTag());
+		this.Aggregate_Message.copyFrom(m);
+	}
 }

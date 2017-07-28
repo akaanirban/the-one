@@ -348,7 +348,7 @@ public abstract class MessageRouter {
 	 * @param from Host the message was from (previous hop)
 	 * @return The message that this host received
 	 */
-	public Message messageTransferred(String id, DTNHost from) {
+	public Message  messageTransferred(String id, DTNHost from) {
 		Message incoming = removeFromIncomingBuffer(id, from);
 		boolean isFinalRecipient;
 		boolean isFirstDelivery; // is this first delivered instance of the msg

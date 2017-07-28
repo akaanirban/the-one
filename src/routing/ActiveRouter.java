@@ -137,6 +137,7 @@ public abstract class ActiveRouter extends MessageRouter {
 		return super.receiveMessage(m, from);
 	}
 
+
 	@Override
 	public Message messageTransferred(String id, DTNHost from) {
 		Message m = super.messageTransferred(id, from);

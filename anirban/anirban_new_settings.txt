@@ -31,22 +31,32 @@ highspeedInterface.transmitSpeed = 10M
 highspeedInterface.transmitRange = 1000
 
 # Define 6 different node groups
-Scenario.nrofHostGroups = 1
+Scenario.nrofHostGroups = 2
 
 # The Tram groups
-Group.groupID = t
-Group.bufferSize = 50M
-Group.router = EpidemicRouter
-Group.movementModel = ShortestPathMapBasedMovement
+Group2.groupID = Vehicle_
+Group2.bufferSize = 50M
+Group2.router = PayloadMessageRouter
+Group2.movementModel = ShortestPathMapBasedMovement
 #Group.routeFile = data/tram3.wkt
-Group.routeType = 1
-Group.waitTime = 10, 30
-Group.speed = 40, 50
-Group.nrofHosts = 100
-Group.nrofInterfaces = 1
-Group.interface1 = btInterface
+Group2.routeType = 1
+Group2.waitTime = 10, 30
+Group2.speed = 40, 50
+Group2.nrofHosts = 100
+Group2.nrofInterfaces = 1
+Group2.interface1 = btInterface
 #Group.interface2 = highspeedInterface
 
+
+
+
+#Group1 central node which are stationary
+Group1.movementModel = StationaryMovement
+Group1.nrofHosts = 1
+Group1.nodeLocation = 0,0
+Group1.groupID = Stationary_Node_
+Group1.bufferSize = 1G
+Group1.speed = 0,0
 
 
 # External Messages generated
@@ -102,11 +112,11 @@ Report.report1 = MessageStatsReport
 Report.report2 = DeliveredMessagesReport
 Report.report3 = ContactsPerHourReport
 Report.report4 = CreatedMessagesReport
-Report.report5 = DistanceDelayReport
+Report.report5 = BufferOccupancyReport
 Report.report6 = MessageLocationReport
 MessageLocationReport.granularity = 1
 MessageLocationReport.messages = 1
-Report.report7 = MessageGraphvizReport
+Report.report7 = UniqueEncountersReport
 Report.report8 = MessageDeliveryReport
 Report.report9 = MessageDelayReport
 Report.report10 = MessageReport
