@@ -562,4 +562,11 @@ public class DTNHost implements Comparable<DTNHost> {
 				m.getId(),m.getSize(),m.getPayload(),m.getMessageTag());
 		this.Aggregate_Message.copyFrom(m);
 	}
+
+	/**
+	 * Returns the aggregate message associated withe ach node
+	 * */
+	public Message getAggregateMessage(){
+		return this.Aggregate_Message;
+	}
 }

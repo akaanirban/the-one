@@ -228,7 +228,7 @@ public class DTN2Events implements EventQueue {
 		id = "bundle."+from+"-"+to+"-"+bundle.creation_timestamp_time+
 			"-"+bundle.creation_timestamp_seq_no;
 		MessageCreateEvent e = new MessageCreateEvent(from, to, id,
-				(int)(bundle.file.length()), 0, SimClock.getTime(), 1618, new ArrayList());
+				(int)(bundle.file.length()), 0, SimClock.getTime(), 0, new ArrayList());
 		synchronized (this.events) {
 			this.events.add(e);
 		}

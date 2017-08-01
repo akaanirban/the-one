@@ -200,9 +200,14 @@ public class MessageEventGenerator implements EventQueue {
 	 * @return a array of tag
 	 */
 	protected ArrayList drawTag(int from) {
-		int numberOfHosts = this.hostRange[1] - this.hostRange[0];
+		int numberOfHosts = this.hostRange[1] - this.hostRange[0]+1;
 		ArrayList tag = new ArrayList<Integer>(Collections.nCopies(numberOfHosts,0));
-		tag.set(from-1, 1);
+		if(from ==0 ){
+            tag.set(from, 1);
+        }
+        else
+		    tag.set(from-100, 1); //Always start the events host address from 1 - 99 or some number
+                            // to avoid array index out of range
 		return tag;
 	}
 

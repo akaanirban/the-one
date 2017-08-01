@@ -2,24 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="578a7c70-3dc9-43af-b648-4617c464753c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/routing/PayloadMessageRouter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/movement/PayloadStationaryMovement.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/report/MessagesPerHostReport.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/core/PayloadMessageListener.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/report/PayloadMessageReport.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/anirban/l1_ls_matlab/The recovered value of X0 is " afterPath="$PROJECT_DIR$/anirban/l1_ls_matlab/The recovered value of X0 is " />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/anirban/anirban_new_settings.txt" afterPath="$PROJECT_DIR$/anirban/anirban_new_settings.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/relatorios/anirban_test_CreatedMessagesReport.txt" afterPath="$PROJECT_DIR$/relatorios/anirban_test_CreatedMessagesReport.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/relatorios/anirban_test_DeliveredMessagesReport.txt" afterPath="$PROJECT_DIR$/relatorios/anirban_test_DeliveredMessagesReport.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/relatorios/anirban_test_DistanceDelayReport.txt" afterPath="$PROJECT_DIR$/relatorios/anirban_test_DistanceDelayReport.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/relatorios/anirban_test_EventLogReport.txt" afterPath="$PROJECT_DIR$/relatorios/anirban_test_EventLogReport.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/relatorios/anirban_test_MessageDelayReport.txt" afterPath="$PROJECT_DIR$/relatorios/anirban_test_MessageDelayReport.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/relatorios/anirban_test_MessageDeliveryReport.txt" afterPath="$PROJECT_DIR$/relatorios/anirban_test_MessageDeliveryReport.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/relatorios/anirban_test_MessageGraphvizReport.txt" afterPath="$PROJECT_DIR$/relatorios/anirban_test_MessageGraphvizReport.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/relatorios/anirban_test_MessageReport.txt" afterPath="$PROJECT_DIR$/relatorios/anirban_test_MessageReport.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/relatorios/anirban_test_MessageStatsReport.txt" afterPath="$PROJECT_DIR$/relatorios/anirban_test_MessageStatsReport.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/core/DTNHost.java" afterPath="$PROJECT_DIR$/src/core/DTNHost.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/core/Message.java" afterPath="$PROJECT_DIR$/src/core/Message.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/input/DTN2Events.java" afterPath="$PROJECT_DIR$/src/input/DTN2Events.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/input/MessageCreateEvent.java" afterPath="$PROJECT_DIR$/src/input/MessageCreateEvent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/input/MessageEventGenerator.java" afterPath="$PROJECT_DIR$/src/input/MessageEventGenerator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routing/ActiveRouter.java" afterPath="$PROJECT_DIR$/src/routing/ActiveRouter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routing/MessageRouter.java" afterPath="$PROJECT_DIR$/src/routing/MessageRouter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routing/PayloadMessageRouter.java" afterPath="$PROJECT_DIR$/src/routing/PayloadMessageRouter.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,56 +28,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="MessageRouter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/routing/MessageRouter.java">
+      <file leaf-file-name="DTNHost.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core/DTNHost.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2554">
-              <caret line="350" column="20" lean-forward="false" selection-start-line="350" selection-start-column="20" selection-end-line="350" selection-end-column="20" />
+            <state relative-caret-position="-4396">
+              <caret line="184" column="35" lean-forward="false" selection-start-line="184" selection-start-column="35" selection-end-line="184" selection-end-column="35" />
               <folding>
-                <element signature="e#6874#6875#0" expanded="true" />
-                <element signature="e#6909#6910#0" expanded="true" />
-                <element signature="e#8586#8587#0" expanded="true" />
-                <element signature="e#8622#8623#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#11353#11354#0" expanded="true" />
+                <element signature="e#11391#11392#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Connection.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/Connection.java">
+      <file leaf-file-name="MessageCreateEvent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/input/MessageCreateEvent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="195" column="19" lean-forward="false" selection-start-line="195" selection-start-column="19" selection-end-line="195" selection-end-column="19" />
+            <state relative-caret-position="1071">
+              <caret line="60" column="8" lean-forward="false" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DTNHost.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/DTNHost.java">
+      <file leaf-file-name="DistanceCapacityInterface.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/interfaces/DistanceCapacityInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
-              <caret line="565" column="0" lean-forward="false" selection-start-line="565" selection-start-column="0" selection-end-line="565" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#5793#5794#0" expanded="true" />
-                <element signature="e#5841#5842#0" expanded="true" />
-                <element signature="e#13018#13019#0" expanded="true" />
-                <element signature="e#13056#13057#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NetworkInterface.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/NetworkInterface.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5410">
-              <caret line="90" column="24" lean-forward="false" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="24" />
-              <folding>
-                <element signature="e#6472#6473#0" expanded="true" />
-                <element signature="e#6502#6503#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="315">
+              <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -88,12 +65,22 @@
       <file leaf-file-name="PayloadMessageRouter.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/routing/PayloadMessageRouter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="43" column="20" lean-forward="false" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
+            <state relative-caret-position="242">
+              <caret line="99" column="15" lean-forward="false" selection-start-line="99" selection-start-column="15" selection-end-line="99" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1501212776743" expanded="false" signature="3948:3976" ph="&lt;~&gt;" />
+                <marker date="1501568394855" expanded="false" signature="4809:4837" ph="&lt;~&gt;" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageRouter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/routing/MessageRouter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="777">
+              <caret line="302" column="23" lean-forward="false" selection-start-line="302" selection-start-column="16" selection-end-line="302" selection-end-column="27" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -101,8 +88,8 @@
       <file leaf-file-name="MessageEventGenerator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/input/MessageEventGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="209" column="0" lean-forward="false" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
+            <state relative-caret-position="504">
+              <caret line="203" column="0" lean-forward="false" selection-start-line="203" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,17 +97,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Message.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/Message.java">
+      <file leaf-file-name="MessagesPerHostReport.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/report/MessagesPerHostReport.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="93" column="104" lean-forward="false" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="104" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1451#1460#0" expanded="true" />
-                <element signature="e#3777#3778#0" expanded="true" />
-                <element signature="e#3798#3799#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="525">
+              <caret line="33" column="12" lean-forward="false" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Connection.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core/Connection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="27" column="71" lean-forward="false" selection-start-line="27" selection-start-column="71" selection-end-line="27" selection-end-column="71" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VBRConnection.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core/VBRConnection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -128,18 +130,8 @@
       <file leaf-file-name="ActiveRouter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/routing/ActiveRouter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="95" column="51" lean-forward="false" selection-start-line="95" selection-start-column="51" selection-end-line="95" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MessageReport.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/report/MessageReport.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="35" column="23" lean-forward="false" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="34" />
+            <state relative-caret-position="2982">
+              <caret line="471" column="44" lean-forward="false" selection-start-line="471" selection-start-column="25" selection-end-line="471" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -173,6 +165,9 @@
       <find>826</find>
       <find>messageTransferred</find>
       <find>messagetrans</find>
+      <find>getAggregate_Message</find>
+      <find>aggregate</find>
+      <find>con</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -195,29 +190,31 @@
         <option value="$PROJECT_DIR$/src/core/MessageListener.java" />
         <option value="$PROJECT_DIR$/src/core/PayloadMessageListener.java" />
         <option value="$PROJECT_DIR$/src/input/PayloadMessageCreateEvent.java" />
-        <option value="$PROJECT_DIR$/src/report/PayloadMessageReport.java" />
-        <option value="$PROJECT_DIR$/src/report/MessageReport.java" />
-        <option value="$PROJECT_DIR$/src/input/MessageCreateEvent.java" />
         <option value="$PROJECT_DIR$/src/input/OneFromEachMessageGenerator.java" />
-        <option value="$PROJECT_DIR$/src/input/DTN2Events.java" />
         <option value="$PROJECT_DIR$/src/report/CreatedMessagesReport.java" />
-        <option value="$PROJECT_DIR$/src/input/MessageEventGenerator.java" />
         <option value="$PROJECT_DIR$/src/gui/EventLogPanel.java" />
         <option value="$PROJECT_DIR$/src/gui/InfoPanel.java" />
         <option value="$PROJECT_DIR$/src/routing/util/PayloadMessageRouter.java" />
-        <option value="$PROJECT_DIR$/src/routing/ActiveRouter.java" />
+        <option value="$PROJECT_DIR$/src/report/MessageReport.java" />
+        <option value="$PROJECT_DIR$/src/report/PayloadMessageReport.java" />
         <option value="$PROJECT_DIR$/src/routing/MessageRouter.java" />
-        <option value="$PROJECT_DIR$/src/core/Message.java" />
         <option value="$PROJECT_DIR$/src/core/DTNHost.java" />
+        <option value="$PROJECT_DIR$/src/input/DTN2Events.java" />
+        <option value="$PROJECT_DIR$/src/core/Message.java" />
+        <option value="$PROJECT_DIR$/src/movement/PayloadStationaryMovement.java" />
+        <option value="$PROJECT_DIR$/src/routing/ActiveRouter.java" />
+        <option value="$PROJECT_DIR$/src/input/MessageCreateEvent.java" />
+        <option value="$PROJECT_DIR$/src/input/MessageEventGenerator.java" />
+        <option value="$PROJECT_DIR$/src/report/MessagesPerHostReport.java" />
         <option value="$PROJECT_DIR$/src/routing/PayloadMessageRouter.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2585" />
-    <option name="y" value="107" />
-    <option name="width" value="990" />
-    <option name="height" value="538" />
+    <option name="x" value="2814" />
+    <option name="y" value="91" />
+    <option name="width" value="792" />
+    <option name="height" value="430" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -292,6 +289,13 @@
               <item name="the-one" type="b2602c69:ProjectViewProjectNode" />
               <item name="the-one" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="movement" type="462c0819:PsiDirectoryNode" />
+              <item name="map" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="the-one" type="b2602c69:ProjectViewProjectNode" />
+              <item name="the-one" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="report" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -322,7 +326,12 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="checkreceiving&#9;PSI&#9;JAVA://routing.EpidemicOracleRouter#checkReceiving&#10;message relay aborted&#9;null&#9;null&#10;received @&#9;null&#9;null&#10;TTL&#9;PSI&#9;JAVA://com.sun.prism.shader.Texture_LinearGradient_PAD_AlphaTest_Loader&#10;createmessage&#9;PSI&#9;JAVA://routing.MessageRouter#createNewMessage" />
+    <property name="SearchEverywhereHistoryKey" value="transferdone&#9;PSI&#9;JAVA://routing.ActiveRouter#transferDone&#10;HotSpot&#9;PSI&#9;JAVA://core.DTNHost#HOTSPOT_FLAG&#10;hotspot&#9;PSI&#9;JAVA://sun.management.HotspotClassLoading&#10;getnodeby&#9;PSI&#9;JAVA://core.World#getNodeByAddress&#10;checkreceiving&#9;PSI&#9;JAVA://routing.EpidemicOracleRouter#checkReceiving&#10;message relay aborted&#9;null&#9;null&#10;received @&#9;null&#9;null&#10;TTL&#9;PSI&#9;JAVA://com.sun.prism.shader.Texture_LinearGradient_PAD_AlphaTest_Loader&#10;createmessage&#9;PSI&#9;JAVA://routing.MessageRouter#createNewMessage" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="movement" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -556,25 +565,25 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3259958" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19270833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32285115" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3081761" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -590,208 +599,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/report/MessageAvailabilityReport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/report/MessageLocationReport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-987">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/World.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/input/OneToEachMessageGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
-          <caret line="45" column="19" lean-forward="false" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/input/MessageDeleteEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/input/MessageBurstGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/jre/lib/ext/jfxrt.jar!/com/sun/prism/shader/Texture_LinearGradient_PAD_AlphaTest_Loader.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/PayloadMessageListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="17" column="33" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/MessageListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="22" column="51" lean-forward="false" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/report/Report.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3295">
-          <caret line="200" column="0" lean-forward="false" selection-start-line="200" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/PayloadMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-          <folding>
-            <element signature="e#265#274#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/report/PayloadMessageReport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-21">
-          <caret line="18" column="49" lean-forward="false" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/input/PayloadMessageCreateEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="28" column="61" lean-forward="false" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#430#439#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/input/PayloadMessageEventGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1806">
-          <caret line="230" column="72" lean-forward="false" selection-start-line="230" selection-start-column="60" selection-end-line="230" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/ECLA.jar!/fi/tkk/netlab/dtn/ecla/Bundle.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-63">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/input/OneFromEachMessageGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="69" column="68" lean-forward="false" selection-start-line="69" selection-start-column="68" selection-end-line="69" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/input/DTN2Events.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="229" column="35" lean-forward="false" selection-start-line="229" selection-start-column="35" selection-end-line="229" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/report/CreatedMessagesReport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="42" column="85" lean-forward="false" selection-start-line="42" selection-start-column="85" selection-end-line="42" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/EventLogControl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-105">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/RoutingInfoWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/EventLogPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="268" column="0" lean-forward="false" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/src.zip!/javax/swing/JComboBox.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2680">
-          <caret line="80" column="13" lean-forward="false" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/InfoPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/routing/FirstContactRouter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-63">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/ModuleCommunicationListener.java">
+    <entry file="file://$PROJECT_DIR$/src/core/ConnectionListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
@@ -799,226 +607,404 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/interfaces/ConnectivityGrid.java">
+    <entry file="file://$PROJECT_DIR$/src/report/BufferOccupancyReport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1407">
-          <caret line="138" column="37" lean-forward="true" selection-start-line="138" selection-start-column="29" selection-end-line="138" selection-end-column="45" />
+        <state relative-caret-position="756">
+          <caret line="44" column="24" lean-forward="false" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/ModuleCommunicationBus.java">
+    <entry file="file://$PROJECT_DIR$/src/report/MessageReport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3612">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        <state relative-caret-position="315">
+          <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/UpdateListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/ApplicationListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="22" column="17" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/report/SnapshotReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-336">
+          <caret line="38" column="24" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/report/EnergyLevelReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="17" column="3" lean-forward="false" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/input/EventQueueHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="57" column="11" lean-forward="false" selection-start-line="57" selection-start-column="11" selection-end-line="57" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/movement/CarMovement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-470">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/Coord.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1617">
-          <caret line="10" column="48" lean-forward="false" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="51" />
+        <state relative-caret-position="-105">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/movement/MovementModel.java">
+    <entry file="file://$PROJECT_DIR$/src/movement/StationaryMovement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="203" column="25" lean-forward="false" selection-start-line="203" selection-start-column="25" selection-end-line="203" selection-end-column="25" />
+        <state relative-caret-position="315">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/input/WKTMapReader.java">
+    <entry file="file://$PROJECT_DIR$/src/movement/BusMovement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2478">
-          <caret line="140" column="20" lean-forward="false" selection-start-line="140" selection-start-column="20" selection-end-line="140" selection-end-column="20" />
+        <state relative-caret-position="1113">
+          <caret line="61" column="22" lean-forward="false" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
+          <folding>
+            <element signature="e#1497#1498#0" expanded="false" />
+            <element signature="e#1547#1548#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/movement/GridLocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-777">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/movement/MapRouteMovement.java">
+    <entry file="file://$PROJECT_DIR$/src/movement/ExternalMovement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-202">
-          <caret line="107" column="10" lean-forward="true" selection-start-line="107" selection-start-column="8" selection-end-line="107" selection-end-column="15" />
+        <state relative-caret-position="244">
+          <caret line="86" column="49" lean-forward="false" selection-start-line="86" selection-start-column="35" selection-end-line="86" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/movement/map/MapNode.java">
+    <entry file="file://$PROJECT_DIR$/src/input/ExternalMovementReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="32" column="15" lean-forward="true" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="18" />
+        <state relative-caret-position="206">
+          <caret line="100" column="38" lean-forward="false" selection-start-line="100" selection-start-column="38" selection-end-line="100" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/movement/Path.java">
+    <entry file="file://$PROJECT_DIR$/src/movement/RandomWaypoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2478">
-          <caret line="128" column="36" lean-forward="true" selection-start-line="128" selection-start-column="36" selection-end-line="128" selection-end-column="36" />
+        <state relative-caret-position="294">
+          <caret line="31" column="24" lean-forward="false" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/routing/EpidemicOracleRouter.java">
+    <entry file="file://$PROJECT_DIR$/src/input/DTN2Events.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="131" column="72" lean-forward="true" selection-start-line="131" selection-start-column="72" selection-end-line="131" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/interfaces/DistanceCapacityInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1449">
-          <caret line="114" column="31" lean-forward="false" selection-start-line="114" selection-start-column="16" selection-end-line="114" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/routing/SprayAndWaitRouter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="58" column="27" lean-forward="false" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="37" />
+        <state relative-caret-position="357">
+          <caret line="233" column="9" lean-forward="false" selection-start-line="233" selection-start-column="9" selection-end-line="233" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/Settings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2856">
-          <caret line="231" column="16" lean-forward="false" selection-start-line="231" selection-start-column="16" selection-end-line="231" selection-end-column="16" />
+        <state relative-caret-position="6188">
+          <caret line="771" column="36" lean-forward="false" selection-start-line="771" selection-start-column="24" selection-end-line="771" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/report/EventLogReport.java">
+    <entry file="file://$PROJECT_DIR$/src/movement/MovementModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="42" column="46" lean-forward="false" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="46" />
+        <state relative-caret-position="-487">
+          <caret line="209" column="26" lean-forward="false" selection-start-line="209" selection-start-column="26" selection-end-line="209" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/routing/PayloadMessageRouter.java">
+    <entry file="file://$PROJECT_DIR$/src/core/SimScenario.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="33" column="26" lean-forward="false" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="31" />
+        <state relative-caret-position="143">
+          <caret line="320" column="19" lean-forward="false" selection-start-line="320" selection-start-column="19" selection-end-line="320" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/movement/ShortestPathMapBasedMovement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-252">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/input/WKTMapReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-27">
+          <caret line="134" column="20" lean-forward="false" selection-start-line="134" selection-start-column="20" selection-end-line="134" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/movement/map/MapNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="32" column="14" lean-forward="false" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/movement/map/SimMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="31" column="32" lean-forward="false" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="36" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1501212776743" expanded="false" signature="3948:3976" ph="&lt;~&gt;" />
+            <element signature="e#1188#1189#0" expanded="false" />
+            <element signature="e#1212#1213#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/routing/EpidemicRouter.java">
+    <entry file="file://$PROJECT_DIR$/src/movement/MapBasedMovement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+        <state relative-caret-position="84">
+          <caret line="46" column="37" lean-forward="false" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/input/MessageCreateEvent.java">
+    <entry file="file://$PROJECT_DIR$/src/movement/PayloadStationaryMovement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="25" column="49" lean-forward="true" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
-          <folding>
-            <element signature="e#537#546#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/Connection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="195" column="19" lean-forward="false" selection-start-line="195" selection-start-column="19" selection-end-line="195" selection-end-column="19" />
+        <state relative-caret-position="265">
+          <caret line="51" column="7" lean-forward="true" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/routing/MessageRouter.java">
+    <entry file="file://$PROJECT_DIR$/src/input/EventQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2554">
-          <caret line="350" column="20" lean-forward="false" selection-start-line="350" selection-start-column="20" selection-end-line="350" selection-end-column="20" />
-          <folding>
-            <element signature="e#6874#6875#0" expanded="true" />
-            <element signature="e#6909#6910#0" expanded="true" />
-            <element signature="e#8586#8587#0" expanded="true" />
-            <element signature="e#8622#8623#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/report/MessageReport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="35" column="23" lean-forward="false" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="34" />
+        <state relative-caret-position="357">
+          <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/VBRConnection.java">
+    <entry file="file://$PROJECT_DIR$/src/core/World.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="51" column="31" lean-forward="false" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
+        <state relative-caret-position="223">
+          <caret line="157" column="54" lean-forward="true" selection-start-line="157" selection-start-column="51" selection-end-line="157" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/input/MessageRelayEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="43" column="22" lean-forward="false" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/ModuleCommunicationBus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/NetworkInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5410">
-          <caret line="90" column="24" lean-forward="false" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="24" />
-          <folding>
-            <element signature="e#6472#6473#0" expanded="true" />
-            <element signature="e#6502#6503#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="208">
+          <caret line="450" column="25" lean-forward="false" selection-start-line="450" selection-start-column="25" selection-end-line="450" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/routing/ActiveRouter.java">
+    <entry file="file://$PROJECT_DIR$/src/core/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2919">
+          <caret line="262" column="7" lean-forward="false" selection-start-line="262" selection-start-column="7" selection-end-line="262" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/jre/lib/rt.jar!/sun/management/HotspotClassLoading.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/interfaces/DistanceCapacityInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/input/MessageCreateEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="60" column="8" lean-forward="false" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routing/DirectDeliveryRouter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routing/FirstContactRouter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routing/LifeRouter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routing/MaxPropRouter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1456">
+          <caret line="37" column="13" lean-forward="false" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routing/ProphetRouter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routing/WaveRouter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routing/SprayAndWaitRouter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routing/EpidemicRouter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/Connection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="95" column="51" lean-forward="false" selection-start-line="95" selection-start-column="51" selection-end-line="95" selection-end-column="51" />
+          <caret line="27" column="71" lean-forward="false" selection-start-line="27" selection-start-column="71" selection-end-line="27" selection-end-column="71" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/DTNHost.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="565" column="0" lean-forward="false" selection-start-line="565" selection-start-column="0" selection-end-line="565" selection-end-column="0" />
+        <state relative-caret-position="-4396">
+          <caret line="184" column="35" lean-forward="false" selection-start-line="184" selection-start-column="35" selection-end-line="184" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5793#5794#0" expanded="true" />
-            <element signature="e#5841#5842#0" expanded="true" />
-            <element signature="e#13018#13019#0" expanded="true" />
-            <element signature="e#13056#13057#0" expanded="true" />
+            <element signature="e#11353#11354#0" expanded="true" />
+            <element signature="e#11391#11392#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/Message.java">
+    <entry file="file://$PROJECT_DIR$/src/core/VBRConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="93" column="104" lean-forward="false" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="104" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1451#1460#0" expanded="true" />
-            <element signature="e#3777#3778#0" expanded="true" />
-            <element signature="e#3798#3799#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="504">
+          <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routing/MessageRouter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="777">
+          <caret line="302" column="23" lean-forward="false" selection-start-line="302" selection-start-column="16" selection-end-line="302" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routing/ActiveRouter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2982">
+          <caret line="471" column="44" lean-forward="false" selection-start-line="471" selection-start-column="25" selection-end-line="471" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/report/MessagesPerHostReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="33" column="12" lean-forward="false" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/input/MessageEventGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="209" column="0" lean-forward="false" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
+        <state relative-caret-position="504">
+          <caret line="203" column="0" lean-forward="false" selection-start-line="203" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1027,11 +1013,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/routing/PayloadMessageRouter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="43" column="20" lean-forward="false" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
+        <state relative-caret-position="242">
+          <caret line="99" column="15" lean-forward="false" selection-start-line="99" selection-start-column="15" selection-end-line="99" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1501212776743" expanded="false" signature="3948:3976" ph="&lt;~&gt;" />
+            <marker date="1501568394855" expanded="false" signature="4809:4837" ph="&lt;~&gt;" />
           </folding>
         </state>
       </provider>

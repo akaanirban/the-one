@@ -389,6 +389,7 @@ public abstract class MessageRouter {
 			this.blacklistedMessages.put(id, null);
 		}
 
+		// writes the message in report
 		for (MessageListener ml : this.mListeners) {
 			ml.messageTransferred(aMessage, from, this.host,
 					isFirstDelivery);

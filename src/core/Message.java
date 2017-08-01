@@ -77,7 +77,7 @@ public class Message implements Comparable<Message> {
 		this.path = new ArrayList<DTNHost>();
 		this.uniqueId = nextUniqueId;
 		this.messageTag = null;
-		this.payload =  2908;
+		this.payload =  0;
 		this.timeCreated = SimClock.getTime();
 		this.timeReceived = this.timeCreated;
 		this.initTtl = INFINITE_TTL;

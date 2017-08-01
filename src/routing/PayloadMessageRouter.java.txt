@@ -38,6 +38,27 @@ public class PayloadMessageRouter extends ActiveRouter {
 
 
 
+    //=========================================================================================
+    /**
+     * returns an aggregate message build from a reference message and rest of the messages*/
+    public Message generateAggregateMessage(){
+        DTNHost thisHost = this.getHost();
+        Random rand = new Random();
+        //String id = "AGG" + (rand.nextInt(50) + 1);
+        String id = "AGG" + thisHost.getAddress()+ "_"+ thisHost.getAddress()  ;
+        Message newAggregateMessage = new Message(thisHost , thisHost,
+                id, 0, 0, new ArrayList<Integer>(0));
+        for(Message m : getMessageCollection()){
+            newAggregateMessage.copyFrom(redundancyAvoidance(newAggregateMessage, m));
+            //newAggregateMessage = redundancyAvoidance(newAggregateMessage, m);
+        }
+        return newAggregateMessage;
+    }
+
+    //============================================================================================
+
+
+
     // return first message id there is redundancy else returns an aggregate message
     public Message redundancyAvoidance(Message aggregate, Message b){
         int tag_size = b.getMessageTag().size();
@@ -96,39 +117,43 @@ public class PayloadMessageRouter extends ActiveRouter {
      * @return a list of message-connections tuples
      */
     protected List<Tuple<Message, Connection>> getMessagesForConnected() {
-       if (getNrofMessages() == 0 || getConnections().size() == 0) {
-			 //no messages -> empty list
+       /* if (getNrofMessages() == 0 || getConnections().size() == 0) {
+			*//* no messages -> empty list *//*
             return new ArrayList<Tuple<Message, Connection>>(0);
+        }*/
+
+
+
+        //]=========================================================
+        Message newAggregateMessage = generateAggregateMessage();
+        if (newAggregateMessage != null){
+            //set the new aggregate message in the Host property
+            this.getHost().setAggregateMessage(newAggregateMessage);
+            //add the new aggregate message in the host message buffer
+            this.createNewMessage(newAggregateMessage);
         }
 
+        //==========================================================
 
+
+        if (this.getHost().getAggregateMessage() == null){
+            return new ArrayList<Tuple<Message, Connection>>(0);
+        }
         List<Tuple<Message, Connection>> forTuples =
                 new ArrayList<Tuple<Message, Connection>>();
-        for (Message m : getMessageCollection()) {
+        /*for (Message m : getMessageCollection()) {
             for (Connection con : getConnections()) {
                 DTNHost to = con.getOtherNode(getHost());
-                //if (m.getTo() == to) {
+                if (m.getTo() == to) {
                     forTuples.add(new Tuple<Message, Connection>(m,con));
-                //}
+                }
             }
-        }
+        }*/
+        forTuples.add(new Tuple<Message, Connection>(this.getHost().getAggregateMessage()
+                , new VBRConnection(this.getHost(), this.getHost().getInterface(1),
+                this.getHost().getAggregateMessage().getTo(),this.getHost().getAggregateMessage().getTo().getInterface(1) ) {
+        }));
 
-       /* if (this.getHost().getAggregateMessage() == null){
-            return new ArrayList<Tuple<Message, Connection>>(0);
-        }
-        List<Tuple<Message, Connection>> forTuples =
-                new ArrayList<Tuple<Message, Connection>>();
-        *//*Send the aggregate message to all connections that the host is connected,
-        thus effectively sending a single message per encounter*//*
-        for(Connection con: getConnections()){
-            DTNHost to = con.getOtherNode(getHost());
-            forTuples.add(new Tuple<Message, Connection>(this.getHost().getAggregateMessage(), con));
-            *//*forTuples.add(new Tuple<Message, Connection>(this.getHost().getAggregateMessage()
-                    , new VBRConnection(this.getHost(), this.getHost().getInterface(1),
-                    this.getHost().getAggregateMessage().getTo(),this.getHost().getAggregateMessage().getTo().getInterface(1) ) {
-            }));*//*
-        }
-*/
         return forTuples;
     }
 
