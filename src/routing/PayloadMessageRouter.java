@@ -96,7 +96,7 @@ public class PayloadMessageRouter extends ActiveRouter {
      * @return a list of message-connections tuples
      */
     protected List<Tuple<Message, Connection>> getMessagesForConnected() {
-       if (getNrofMessages() == 0 || getConnections().size() == 0) {
+       /*if (getNrofMessages() == 0 || getConnections().size() == 0) {
 			 //no messages -> empty list
             return new ArrayList<Tuple<Message, Connection>>(0);
         }
@@ -112,23 +112,22 @@ public class PayloadMessageRouter extends ActiveRouter {
                 //}
             }
         }
-
-       /* if (this.getHost().getAggregateMessage() == null){
+*/
+        if (this.getHost().getAggregateMessage() == null || getConnections().size() == 0){
             return new ArrayList<Tuple<Message, Connection>>(0);
         }
         List<Tuple<Message, Connection>> forTuples =
                 new ArrayList<Tuple<Message, Connection>>();
-        *//*Send the aggregate message to all connections that the host is connected,
-        thus effectively sending a single message per encounter*//*
+        /*Send the aggregate message to all connections that the host is connected,
+        thus effectively sending a single message per encounter*/
         for(Connection con: getConnections()){
             DTNHost to = con.getOtherNode(getHost());
             forTuples.add(new Tuple<Message, Connection>(this.getHost().getAggregateMessage(), con));
-            *//*forTuples.add(new Tuple<Message, Connection>(this.getHost().getAggregateMessage()
+            forTuples.add(new Tuple<Message, Connection>(this.getHost().getAggregateMessage()
                     , new VBRConnection(this.getHost(), this.getHost().getInterface(1),
                     this.getHost().getAggregateMessage().getTo(),this.getHost().getAggregateMessage().getTo().getInterface(1) ) {
-            }));*//*
+            }));
         }
-*/
         return forTuples;
     }
 
