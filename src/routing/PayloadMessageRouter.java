@@ -123,10 +123,10 @@ public class PayloadMessageRouter extends ActiveRouter {
         for(Connection con: getConnections()){
             DTNHost to = con.getOtherNode(getHost());
             forTuples.add(new Tuple<Message, Connection>(this.getHost().getAggregateMessage(), con));
-            forTuples.add(new Tuple<Message, Connection>(this.getHost().getAggregateMessage()
+            /*forTuples.add(new Tuple<Message, Connection>(this.getHost().getAggregateMessage()
                     , new VBRConnection(this.getHost(), this.getHost().getInterface(1),
                     this.getHost().getAggregateMessage().getTo(),this.getHost().getAggregateMessage().getTo().getInterface(1) ) {
-            }));
+            }));*/
         }
         return forTuples;
     }
