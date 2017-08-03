@@ -624,7 +624,7 @@ Events2.size = 500k,1M
 Events2.hosts = 801, 801
 Events2.tohosts = 864, 864
 Events2.prefix = M
-Events2.activehotspot = false
+Events2.activehotspot = true
 
 Events3.class = MessageEventGenerator
 Events3.interval = 1,1
@@ -632,7 +632,7 @@ Events3.size = 500k,1M
 Events3.hosts = 802, 802
 Events3.tohosts = 864, 864
 Events3.prefix = M
-Events3.activehotspot = false
+Events3.activehotspot = true
 
 Events4.class = MessageEventGenerator
 Events4.interval = 1,1
@@ -648,7 +648,7 @@ Events5.size = 500k,1M
 Events5.hosts = 804, 804
 Events5.tohosts = 864, 864
 Events5.prefix = M
-Events5.activehotspot = true
+Events5.activehotspot = false
 
 Events6.class = MessageEventGenerator
 Events6.interval = 1,1
@@ -680,7 +680,7 @@ Events9.size = 500k,1M
 Events9.hosts = 808, 808
 Events9.tohosts = 864, 864
 Events9.prefix = M
-Events9.activehotspot = true
+Events9.activehotspot = false
 
 Events10.class = MessageEventGenerator
 Events10.interval = 1,1
@@ -696,7 +696,7 @@ Events11.size = 500k,1M
 Events11.hosts = 810, 810
 Events11.tohosts = 864, 864
 Events11.prefix = M
-Events11.activehotspot = true
+Events11.activehotspot = false
 
 Events12.class = MessageEventGenerator
 Events12.interval = 1,1
@@ -736,7 +736,7 @@ Events16.size = 500k,1M
 Events16.hosts = 815, 815
 Events16.tohosts = 864, 864
 Events16.prefix = M
-Events16.activehotspot = false
+Events16.activehotspot = true
 
 Events17.class = MessageEventGenerator
 Events17.interval = 1,1
@@ -752,7 +752,7 @@ Events18.size = 500k,1M
 Events18.hosts = 817, 817
 Events18.tohosts = 864, 864
 Events18.prefix = M
-Events18.activehotspot = false
+Events18.activehotspot = true
 
 Events19.class = MessageEventGenerator
 Events19.interval = 1,1
@@ -776,7 +776,7 @@ Events21.size = 500k,1M
 Events21.hosts = 820, 820
 Events21.tohosts = 864, 864
 Events21.prefix = M
-Events21.activehotspot = false
+Events21.activehotspot = true
 
 Events22.class = MessageEventGenerator
 Events22.interval = 1,1
@@ -816,7 +816,7 @@ Events26.size = 500k,1M
 Events26.hosts = 825, 825
 Events26.tohosts = 864, 864
 Events26.prefix = M
-Events26.activehotspot = true
+Events26.activehotspot = false
 
 Events27.class = MessageEventGenerator
 Events27.interval = 1,1
@@ -912,7 +912,7 @@ Events38.size = 500k,1M
 Events38.hosts = 837, 837
 Events38.tohosts = 864, 864
 Events38.prefix = M
-Events38.activehotspot = false
+Events38.activehotspot = true
 
 Events39.class = MessageEventGenerator
 Events39.interval = 1,1
@@ -968,7 +968,7 @@ Events45.size = 500k,1M
 Events45.hosts = 844, 844
 Events45.tohosts = 864, 864
 Events45.prefix = M
-Events45.activehotspot = true
+Events45.activehotspot = false
 
 Events46.class = MessageEventGenerator
 Events46.interval = 1,1
@@ -976,7 +976,7 @@ Events46.size = 500k,1M
 Events46.hosts = 845, 845
 Events46.tohosts = 864, 864
 Events46.prefix = M
-Events46.activehotspot = true
+Events46.activehotspot = false
 
 Events47.class = MessageEventGenerator
 Events47.interval = 1,1
@@ -984,7 +984,7 @@ Events47.size = 500k,1M
 Events47.hosts = 846, 846
 Events47.tohosts = 864, 864
 Events47.prefix = M
-Events47.activehotspot = false
+Events47.activehotspot = true
 
 Events48.class = MessageEventGenerator
 Events48.interval = 1,1
@@ -1032,7 +1032,7 @@ Events53.size = 500k,1M
 Events53.hosts = 852, 852
 Events53.tohosts = 864, 864
 Events53.prefix = M
-Events53.activehotspot = true
+Events53.activehotspot = false
 
 Events54.class = MessageEventGenerator
 Events54.interval = 1,1
@@ -1072,7 +1072,7 @@ Events58.size = 500k,1M
 Events58.hosts = 857, 857
 Events58.tohosts = 864, 864
 Events58.prefix = M
-Events58.activehotspot = true
+Events58.activehotspot = false
 
 Events59.class = MessageEventGenerator
 Events59.interval = 1,1
@@ -1088,7 +1088,7 @@ Events60.size = 500k,1M
 Events60.hosts = 859, 859
 Events60.tohosts = 864, 864
 Events60.prefix = M
-Events60.activehotspot = true
+Events60.activehotspot = false
 
 Events61.class = MessageEventGenerator
 Events61.interval = 1,1
@@ -1096,7 +1096,7 @@ Events61.size = 500k,1M
 Events61.hosts = 860, 860
 Events61.tohosts = 864, 864
 Events61.prefix = M
-Events61.activehotspot = false
+Events61.activehotspot = true
 
 Events62.class = MessageEventGenerator
 Events62.interval = 1,1
@@ -1120,7 +1120,7 @@ Events64.size = 500k,1M
 Events64.hosts = 863, 863
 Events64.tohosts = 864, 864
 Events64.prefix = M
-Events64.activehotspot = false
+Events64.activehotspot = true
 
 MovementModel.rngSeed = 1
 MovementModel.worldSize = 4500, 3400
@@ -1134,22 +1134,13 @@ MapBasedMovement.mapFile4 = data/shops.wkt
 Optimization.cellSizeMult = 5
 Optimization.randomizeUpdateOrder = true
 
-Report.nrofReports = 11
+Report.nrofReports = 2
 Report.warmup = 0
 Report.reportDir = relatorios/
-Report.report1 = MessageStatsReport
-Report.report2 = DeliveredMessagesReport
-Report.report3 = ContactsPerHourReport
-Report.report4 = CreatedMessagesReport
-Report.report5 = BufferOccupancyReport
-Report.report6 = MessageLocationReport
+Report.report1 = CreatedMessagesReport
 MessageLocationReport.granularity = 1
 MessageLocationReport.messages = 1
-Report.report7 = MessagesPerHostReport
-Report.report8 = MessageDeliveryReport
-Report.report9 = MessageDelayReport
-Report.report10 = MessageReport
-Report.report11 = EventLogReport
+Report.report2 = MessagesPerHostReport
 Report.granularity = 239
 ProphetRouter.secondsInTimeUnit = 30
 SprayAndWaitRouter.nrofCopies = 6

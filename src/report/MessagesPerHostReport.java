@@ -19,7 +19,7 @@ public class MessagesPerHostReport extends SnapshotReport
         implements UpdateListener {
 
     public static final String HEADER =
-            "# Host: ID, Number_Of_messages";
+            "# Content and TAG of the messages in the vehicles ";
     public MessagesPerHostReport(){
         write(HEADER);
     }
@@ -27,11 +27,12 @@ public class MessagesPerHostReport extends SnapshotReport
     protected void writeSnapshot(DTNHost h) {
         double payload = h.getAggregateMessage() != null? h.getAggregateMessage().getPayload(): 0;
         ArrayList tag = h.getAggregateMessage() != null? h.getAggregateMessage().getMessageTag(): new ArrayList(Collections.nCopies(1,0));
-        write("#Node: "+ h.toString() + ", Aggregate Payload: " + payload + " Tag: " + tag);
+       //write("#Node: "+ h.toString() + ", Aggregate Payload: " + payload + " Tag: " + tag);
+        write("#Node: "+ h.toString());
         //String Messages = "";
         for(Message m : h.getMessageCollection()){ //this is the Phi matrix
             //Messages = Messages + " " + m.getId()+ "|";
-            write(m.getMessageTag()+" "+ m.getPayload());
+            write(m.getMessageTag()+": "+ m.getPayload());
             //write(m.getMessageTag().subList(10, m.getMessageTag().size())+" "+ m.getPayload());
         }
         //int noofmessages = h.getNrofMessages();
