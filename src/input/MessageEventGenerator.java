@@ -47,6 +47,8 @@ public class MessageEventGenerator implements EventQueue {
 	 * whole simulation time. */
 	public static final String MESSAGE_TIME_S = "time";
 
+    /**if true then the hotspot will generate message otherwise generate 0*/
+    public static final String ACTIVE_HOTSPOT = "activehotspot";
 	/** Time of the next event (simulated seconds) */
 	protected double nextEventsTime = 0;
 	/** Range of host addresses that can be senders or receivers */
@@ -64,6 +66,7 @@ public class MessageEventGenerator implements EventQueue {
 	/** Time range for message creation (min, max) */
 	protected double[] msgTime;
 
+    protected String activeFlag;
 	/** Random number generator for this Class */
 	protected Random rng;
 
@@ -78,6 +81,7 @@ public class MessageEventGenerator implements EventQueue {
 		this.msgInterval = s.getCsvInts(MESSAGE_INTERVAL_S);
 		this.hostRange = s.getCsvInts(HOST_RANGE_S, 2);
 		this.idPrefix = s.getSetting(MESSAGE_ID_PREFIX_S);
+        this.activeFlag = s.getSetting(ACTIVE_HOTSPOT);
 
 		if (s.contains(MESSAGE_TIME_S)) {
 			this.msgTime = s.getCsvDoubles(MESSAGE_TIME_S, 2);
@@ -191,7 +195,12 @@ public class MessageEventGenerator implements EventQueue {
 	protected double drawContent(int from) {
 		Random randomContent = new Random();
 		randomContent.setSeed(from);
-		return (double) randomContent.nextInt(200) + 0.5 ; //just randomly adding something
+		if (this.activeFlag.toLowerCase().contains("true")){
+            return (double) randomContent.nextInt(200) + 0.5 ; //just randomly adding something
+        }
+        else
+            return (double) 0;
+
 	}
 
 	/**
@@ -200,13 +209,14 @@ public class MessageEventGenerator implements EventQueue {
 	 * @return a array of tag
 	 */
 	protected ArrayList drawTag(int from) {
-		int numberOfHosts = this.hostRange[1] - this.hostRange[0]+1;
-		ArrayList tag = new ArrayList<Integer>(Collections.nCopies(numberOfHosts,0));
+		//int numberOfHosts = this.hostRange[1] - this.hostRange[0]+1;
+		int numberOfHosts = 64;
+        ArrayList tag = new ArrayList<Integer>(Collections.nCopies(numberOfHosts,0));
 		if(from ==0 ){
             tag.set(from, 1);
         }
         else
-		    tag.set(from-100, 1); //Always start the events host address from 1 - 99 or some number
+		    tag.set(from-800, 1); //Always start the events host address from 1 - 99 or some number
                             // to avoid array index out of range
 		return tag;
 	}

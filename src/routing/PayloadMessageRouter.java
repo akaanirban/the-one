@@ -19,6 +19,8 @@ public class PayloadMessageRouter extends ActiveRouter {
 
     //TODO: read and use a different implementation than blindly copying epidemic router
 
+    /**From paper: Decentralised Context sharing in Vehicular Delay Tolerant Networks with
+     * Compressed Sensing, Xiew. K et. al., ICDCS, 2016*/
     /**
      * returns an aggregate message build from a reference message and rest of the messages*/
     public Message generateAggregateMessage(Message newMessage){
@@ -29,10 +31,30 @@ public class PayloadMessageRouter extends ActiveRouter {
         Message newAggregateMessage = new Message(thisHost,newMessage.getTo(),id,
                 newMessage.getSize(), newMessage.getResponseSize(),
                 new ArrayList<Integer>(Collections.nCopies(newMessage.getMessageTag().size(),0)));
-        for(Message m : getMessageCollection()){
-            newAggregateMessage.copyFrom(redundancyAvoidance(newAggregateMessage, m));
-            //newAggregateMessage = redundancyAvoidance(newAggregateMessage, m);
+
+
+        /*Algorithm from the paper by reshuffling the messages*/
+        int totalMessages = getMessageCollection().size();
+        List<Message> allMessages = new ArrayList(getMessageCollection());
+        int i = rand.nextInt(totalMessages)+1;
+        int L = i;
+        int j;
+        while (i < L + totalMessages){
+            if(i != totalMessages){
+                j = i % totalMessages;
+            }
+            else{
+                j = totalMessages;
+            }
+            newAggregateMessage.copyFrom(redundancyAvoidance(newAggregateMessage, allMessages.get(j-1)));
+            i = i + 1;
         }
+
+        ///*Iterate normally over all the messages*/
+        //for(Message m : getMessageCollection()){
+        //    newAggregateMessage.copyFrom(redundancyAvoidance(newAggregateMessage, m));
+        //    //newAggregateMessage = redundancyAvoidance(newAggregateMessage, m);
+        //}
         return newAggregateMessage;
     }
 
